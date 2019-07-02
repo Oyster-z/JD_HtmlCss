@@ -10,6 +10,23 @@
     margin: auto;
 }
 
+.fl{
+    float: left;
+}
+
+.fr{
+    float: right;
+}
+
+li{
+    list-style: none;
+}
+
+ul {
+    margin: 0;
+    padding: 0;
+}
+
 /* font 字体的使用 使用阿里巴巴的字体网站*/
 @font-face {
     font-family: 'iconfont';
@@ -52,4 +69,61 @@
     /* 以下两句完成字体居中对齐 */
     text-align: center;
     line-height: 20px;  
+}
+
+/* 快捷导航栏 */
+.shortcut {
+    height: 30px;
+    line-height: 30px;
+    background-color: #E3E4E5;
+    bottom: 1px #dddddd solid;
+    color: #9D9D9D;
+    font-size: 12px;
+}
+
+.shortcut a{
+    color: #9D9D9D;
+    font-size: 12px;
+    text-decoration: none;
+}
+
+.shortcut a:hover{
+    color: #f10215;
+}
+
+.pos{
+    color: #f10215;
+    font-size: 14px;
+    font-family: "iconfont";
+    font-style: normal;
+}
+
+.shortcut .fl li{
+    margin-left: 200px;
+}
+
+.shortcut .fr li{
+    float: left;
+}
+
+.spacer {
+    width: 1px;
+    height: 10px;
+    background-color: #9D9D9D;
+    margin: 10px 10px 0;
+}
+
+.dropdown{
+    /* 使用padding-right，i使用定位的时候就相对于li的最外层，如果使用margin-right 那么i定位时就相对于除了margin之外的边缘*/
+    padding-right: 15px;        
+    position: relative;
+}
+
+.dropdown i{
+    font-family: "iconfont";
+    font-size: 16px;
+    font-style: normal;
+    position: absolute;
+    top: 2px;
+    right: -2px;
 }
