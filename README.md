@@ -55,12 +55,16 @@
     ```
     通栏：hight 30px、 color：E3E4E5,下边框：color：#dddddd 1px solid
 
-    去除li标签的小点，ul 使用margin 0 padding 0
+    去除li标签的小点 line-style: none
     
-    字体颜色：#9D9D9D 12px 垂直居中
+    字体颜色：#9D9D9D 12px 字体垂直居中 line-height: 30px 高度与div的高度一致
 
     a标签去除下划线，text-deceration: none
 
-    a:hover: #c81623
+    移动到a标签时，a标签变色 a:hover: #c81623
+
+    子绝父相：定位时，相对的position位置需要注意一下
+    /* 使用padding-right，i使用定位的时候就相对于li的最外层，如果使用margin-right 那么i定位时就相对于除了margin之外的边缘*/
+
 
     ```
