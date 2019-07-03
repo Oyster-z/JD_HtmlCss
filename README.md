@@ -66,5 +66,26 @@
     子绝父相：定位时，相对的position位置需要注意一下
     /* 使用padding-right，i使用定位的时候就相对于li的最外层，如果使用margin-right 那么i定位时就相对于除了margin之外的边缘*/
 
+    二维码: 宽60px 高60px 边框 1px solid #ccc，使用调试找到合适的top 和 left的值
+    ```
+    - 手机京东下面的二维码，使用定位 ？？？三角符号
+#### 20190703
+6. header部分
+    - 总共6个模块，全部使用定位的方式来实现
+    - header模块，内部放一个版心，版心内放6个模块，版心内位置如果偏移找到导致偏移的标签，将标签标准化。
+    - 模块一 logo，京东狗，最好的效果 div.logo>h1>a
+    ```
+        header的 高度 140px;
+        logo：宽高 190px 170px 定位，logo的区间都是a标签的范围。a里面的京东两个字不能删掉，为了网站优化，完成搜索优先级；
 
     ```
+7. 网站优化三大标签
+    ##### 站内优化和站外优化
+    - 网页title Google(70KB 35个中文) Baidu(56KB 28个中文) 建议：网站名 + 简短网站介绍，越前面的词语权重越高
+    - 网站说明 description ,搜索引擎显示的简短说明，不要超过120个汉字;
+    - 页面关键字 Keywords ，在搜索引擎搜索关键词的时候可以直接搜索到该网站;
+    ```
+        <title>XXXXX网站标题</title>
+        <meta name="description" content="XXXXX简短说明"/>
+        <meta name="Keywords" content="XXXXXX网站包含的关键词">
+    ``` 

@@ -27,6 +27,15 @@ ul {
     padding: 0;
 }
 
+h1{
+    margin: 0;
+    padding: 0;
+}
+
+.style_red{
+    color: #f10215!important;
+}
+
 /* font 字体的使用 使用阿里巴巴的字体网站*/
 @font-face {
     font-family: 'iconfont';
@@ -73,10 +82,10 @@ ul {
 
 /* 快捷导航栏 */
 .shortcut {
-    height: 30px;
-    line-height: 30px;
+    height: 29px;
+    line-height: 29px;
     background-color: #E3E4E5;
-    bottom: 1px #dddddd solid;
+    border-bottom: 1px #dddddd solid;
     color: #9D9D9D;
     font-size: 12px;
 }
@@ -126,4 +135,38 @@ ul {
     position: absolute;
     top: 2px;
     right: -2px;
+}
+
+.erweima{
+    width: 60px;
+    height: 60px;
+    border: 1px solid #CCCCCC;
+    padding: 5px;
+    position: absolute;
+    top: 35px;
+    left: -8px;
+    z-index: 0;     /*为了防止被header盖住提高二维码的显示优先级，目前使用 0 不被覆盖*/
+}
+
+/* header 部分 */
+.header{
+    height: 140px;
+    background-color: #aed2db;
+}
+
+.header .logo{
+    height: 170px;
+    width: 190px;
+    position: absolute;
+    background-color: #f10215;
+    top: -30px;
+}
+
+.logo a{
+    width: 190px;
+    height: 170px;
+    display: block;
+    background: url(./../images/logo.jpg) no-repeat;
+    text-indent: -999px;
+    overflow: hidden;
 }
