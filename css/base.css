@@ -22,14 +22,15 @@ li{
     list-style: none;
 }
 
-ul {
+ul, h1, a {
     margin: 0;
     padding: 0;
 }
 
-h1{
-    margin: 0;
+input, button{
     padding: 0;
+    margin: 0;
+    border: 0;
 }
 
 .style_red{
@@ -151,7 +152,7 @@ h1{
 /* header 部分 */
 .header{
     height: 140px;
-    background-color: #aed2db;
+    /* background-color: #aed2db; */
 }
 
 .header .logo{
@@ -160,6 +161,7 @@ h1{
     position: absolute;
     background-color: #f10215;
     top: -30px;
+    box-shadow: 0 -12px 10px rgba(0, 0, 0, 0.2);
 }
 
 .logo a{
@@ -169,4 +171,121 @@ h1{
     background: url(./../images/logo.jpg) no-repeat;
     text-indent: -999px;
     overflow: hidden;
+}
+
+.search{
+    position: absolute;
+    width: 550px;
+    height: 35px;
+    top: 25px;
+    left: 320px;
+    background-color: gold;
+}
+
+.search input{
+    height: 33px;
+    width: 493px;
+    border: 1px solid #f10215;
+    outline: none;
+    padding-left: 5px;
+    color: #989898;
+    float: left; 
+}
+
+.search button{
+    width: 50px;
+    height: 35px;
+    background-color: #f10215;
+    float: left;    /*浮动去除行内块之间的缝隙*/
+    cursor: pointer;
+}
+
+.search i {
+    font-family: "iconfont";
+    font-size: 16px;
+    font-style: normal;
+    color: #fff;
+}
+
+.search em{
+    position: absolute;
+    width: 19px;
+    height: 15px;
+    top: 10px;
+    right: 65px;
+    background: url(./../images/sprite-search.png) no-repeat;
+    cursor: pointer;
+}
+
+.search em:hover{
+    background-position: -30px 0;  /*x 左移30px y方向不变*/ 
+}
+
+.hotwords{
+    position: absolute;
+    width: 550px;
+    height: 20px;
+    top: 65px;
+    left: 320px;
+    line-height: 20px;
+}
+
+.hotwords a{
+    font-size: 12px;
+    text-decoration: none;
+    color: #989898;
+    float: left;
+    margin-right: 10px;
+}
+.hotwords a:hover{
+    color: #f10215;
+}
+
+.mycar{
+    position: absolute;
+    width: 188px;
+    height: 33px;
+    /* background-color: gold; */
+    top: 25px;
+    right: 100px;
+    border: 1px solid #989898;
+    text-align: center;
+    line-height: 33px;
+}
+
+.mycar i {
+    font-family: "iconfont";
+    font-size: 18px;
+    font-style: normal;
+    color: #f10215;
+    /* margin-right: 5px; */
+}
+
+.mycar a{
+    text-decoration: none;
+    color: #f10215;
+    font-size: 14px;
+    /* float: left; */
+}
+
+.mycar s{
+    background-color: #f10215;
+    color: #fff;
+    height: 12px;
+    line-height: 12px;
+    font-family: "宋体";
+    font-size: 12px;
+    border-radius: 6px;
+    position: absolute;
+    top: 5px;
+    left: 145px;
+}
+
+.computer{
+    position: absolute;
+    right: 0;
+    top: 90px;
+    background-color: gold;
+    width: 190px;
+    height: 40px;
 }

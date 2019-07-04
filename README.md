@@ -74,10 +74,11 @@
     - 总共6个模块，全部使用定位的方式来实现
     - header模块，内部放一个版心，版心内放6个模块，版心内位置如果偏移找到导致偏移的标签，将标签标准化。
     - 模块一 logo，京东狗，最好的效果 div.logo>h1>a
+    - box shadow 可以考虑再去了解一下
     ```
         header的 高度 140px;
         logo：宽高 190px 170px 定位，logo的区间都是a标签的范围。a里面的京东两个字不能删掉，为了网站优化，完成搜索优先级；
-
+        box-shadow: 0 -12px 10px rgb(0, 0, 0, 0.2)
     ```
 7. 网站优化三大标签
     ##### 站内优化和站外优化
@@ -89,3 +90,25 @@
         <meta name="description" content="XXXXX简短说明"/>
         <meta name="Keywords" content="XXXXXX网站包含的关键词">
     ``` 
+
+#### 20190704
+8. 搜索部分
+    - input、button
+    - button的搜索，将鼠标变成小手，cursor：pointer，小圆圈，放大镜， button里面放上i标签 内放搜索的矢量字体
+    - 相机部分，精灵图，精灵图采用坐标的方式来选择需要显示的，background-position -30px 0(x y)
+    ```
+        div 宽高: 550px * 35px  left:320px top: 25px
+        input 标签的大小要减去变宽的大小 宽高 498px * 33px 边框，取消蓝色边框 outline：none 文字加上左边距5px
+        input默认内容：微单相机 color颜色修改成 #989898
+        button 标签 宽50px 去除边框 button(border: 0px) 行内块和行内块之间有缝隙，使用浮动来去除缝隙。
+        i 矢量字体 16px
+        相机采用绝对定位，父亲search也使用绝对定位，top 10px right 65px 宽高 19px 15px
+    ```
+9. 热词部分
+    - 全部使用a 标签 hotwords top 70px left 320px
+10. 购物车
+    - top 和 搜索部分一致 宽高 200px 35px 定位靠右定位。
+    - font-size 14px 水平垂直居中 text-align：center line-height： 33px
+    - 购物车数量，行高16px，字体大小 12px，border-radius：6px （定位 top 5px left 140px）
+11. computer部分
+    - a标签实现，使用a标签背景用图片就可以了。定位 right 0 bottom 10px
