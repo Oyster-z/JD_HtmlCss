@@ -112,3 +112,18 @@
     - 购物车数量，行高16px，字体大小 12px，border-radius：6px （定位 top 5px left 140px）
 11. computer部分
     - a标签实现，使用a标签背景用图片就可以了。定位 right 0 bottom 10px
+#### 20190705
+12. 导航栏
+    - 将导航栏navitems分为三个部分，每个li之间放一个大小一致的小li
+    - 竖线 在ul 之间使用 div 来实现，使用spacer来实现，对这里的spacer 的进行提权，（复习权重的计算及影响）
+    ```
+        navitems 定位 left 200px  bottom 0
+        
+        a标签 font-size 16px weight 700px 不使用bold 提升解析的性能 height 40px line-height 40px
+        
+        给li标签使用margin-left 实现标签的左边隔开
+        
+        确认a 标签的hover导致变色还是li标签的hover 如果只加在a标签上，那么要给a标签给一个display block 属性
+
+        竖线的 margin 15px 20px -10px 0
+    ```
