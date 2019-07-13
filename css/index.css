@@ -5,7 +5,6 @@
 
 .jd_inner {
     height: 480px;
-    background-color: gold;
     position: relative;
     z-index: 1;
 }
@@ -49,7 +48,6 @@
 
 .jd_col2 {
     width: 790px;
-    background-color: #6E6E6E;
     float: left;
     height: 480px;
     margin-left: 10px;
@@ -139,7 +137,196 @@
 
 .jd_col3 {
     width: 190px;
-    background-color: #6E6E6E;
     float: right;
     height: 480px;
+}
+
+.user {
+    height: 95px;
+    padding-top: 20px;
+    padding-left: 15px;
+}
+
+.user-info {
+    height: 40px;
+    padding-left: 54px;
+    font-size: 12px;
+    color: #747474;
+    line-height: 22px;
+    position: relative;
+}
+
+.user-info a {
+    font-size: 12px;
+    color: #747474;
+}
+
+.user-info a:hover {
+    color: #f10215;
+}
+
+.user-img {
+    width: 40px;
+    height: 40px;
+    position: absolute;
+    border-radius: 50%;
+    top: 0;
+    left: 0;
+    overflow: hidden;
+}
+
+.user-img img {
+    width: 100%;
+    height: auto;
+}
+
+.user-profit {
+    margin-top: 14px;
+}
+
+.user-profit a {
+    width: 70px;
+    height: 20px;
+    font-size: 12px;
+    color: #f10215;
+    line-height: 20px;
+    text-align: center;
+    display: inline-block;
+    border: 2px solid #f10215;
+    margin-left: 4px;
+}
+
+.user-profit a:hover {
+    color: #fff;
+    background-color: #f10215;
+}
+
+.line {
+    width: 28px;
+    height: 2px;
+    background-color: #f10215;
+    position: absolute;
+    left: 0;
+    bottom: -1px;
+}
+
+.news {
+    height: 149px;
+    border-top: 1px solid #ccc;
+    border-bottom: 1px solid #ccc;
+    padding: 5px 15px 0;
+}
+
+.news_hd {
+    padding: 3px 0;
+    border-bottom: 1px solid #ccc;
+    position: relative;
+}
+
+.news_hd a {
+    font-size: 12px;
+    color: #747474;
+    margin: 0 5px;
+}
+
+.news_hd .cuxiao {
+    display: inline-block;
+    border-right: 1px solid #ccc;
+    padding-right: 10px;
+}
+
+.news_hd .more {
+    position: absolute;
+    right: 0;
+    bottom: 4px;
+}
+
+.news_bd {
+    margin-top: 10px;
+}
+
+.news_bd li {
+    height: 23px;
+}
+
+.news_bd a {
+    font-size: 12px;
+    color: #747474;
+    line-height: 23px;
+}
+
+
+.col3_service {
+    height: 209px;
+    overflow: hidden;
+}
+
+.col3_service ul {
+    width: 200px;
+}
+
+.col3_service li {
+    width: 47px;
+    height: 69px;
+    float: left;
+    border-right: 1px solid #ccc;
+    border-bottom: 1px solid #ccc;
+}
+
+.col3_service li i{
+    display: block;
+    width: 24px;
+    height: 24px;
+    margin: 15px auto 8px;
+    background: url(./../images/sprite_fs@1x.png) no-repeat;
+}
+
+.col3_service li p {
+    font-size: 12px;
+    color: #747474;
+    text-align: center;
+}
+
+.col3_service .huafei{
+    background-position: 0 -88px;
+}
+
+.col3_service .jiudian{
+    background-position: -44px -88px;
+}
+
+.col3_service .jipiao{
+    background-position: 0 -44px;
+}
+
+.col3_service .huoche{
+    background-position: -88px -88px;
+}
+
+.col3_service .qiyegou{
+    background-position: -88px -44px;
+}
+
+.col3_service .dianying{
+    background-position: -44px -44px;
+}
+
+.col3_service .youxi{
+    background-position: -88px 0;
+}
+
+.col3_service .zongchou{
+    background-position: -132px 0;
+}
+
+.col3_service .licai{
+    background-position: -132px -44px;
+}
+
+.col3_service .lipin{
+    background-position: -132px -88px;
+}
+
+.col3_service .baitiao{
+    background-position: -44px 0;
 }

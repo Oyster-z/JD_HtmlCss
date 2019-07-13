@@ -1,6 +1,15 @@
 # JD_HtmlCss
 关于html和css的小项目(京东)
 
+
+#### 产品创新思维的三重境界
+    > 学会借用 看山是山，看的是山的本身是现象；
+    > 学会遗忘 看山不是山，看的是山备货的道理是本质；
+    > 学会学习 看山还是山，是现象和本质的统一是融会贯通；
+
+#### 道家思想
+    > 有道无术，术尚可求，有术无道，止于术。
+
 #### 20190627
 1. 初步准备
     - css reset 初始化
@@ -188,10 +197,15 @@
     - 左边 jd_clo1 ul>li>a
     - 中间 jd_clo2 轮播图 上下划分 jd_clo2_hd jd_clo2_bd 轮播图包含两个箭头（） 背景图 序列原点（）
         图片底部侧缝隙，使用 vertical-align: top
-    - 右边 jd_clo3
+    - 右边 jd_clo3 分为上中下，user、news、jd_col3_service
+    - news里面的 tab栏切换
+    - service 里面的 li
     ```
         jd_clo1 190px(width) * 480(height) background-color:#6E6568 hover: #999395
         jd_clo2 790px(width) * 480(height) margin-left: 10px 下 390*130px    上 790px * 340px
         
         jd_clo3 190px(width) * 480(height)
+        user 115px, news 154px, jd_cols_service 209px
+
+        service li 47px 69px
     ```
