@@ -22,7 +22,7 @@ li{
     list-style: none;
 }
 
-ul, h1, a {
+ul, h1, a , h5, p, dl, dd{
     margin: 0;
     padding: 0;
 }
@@ -32,6 +32,22 @@ input, button{
     margin: 0;
     border: 0;
 }
+
+a{
+    text-decoration: none;
+}
+
+/* 使用浮动的时候，标签不能自动撑开盒子，所以需要采用清除浮动来完成这个功能 */
+.clearfix:before,.clearfix:after { 
+    content:"";
+    display: table;  /* 这句话可以出发BFC BFC可以清除浮动,BFC我们后面讲 */
+  }
+  .clearfix:after {
+   clear:both;
+  }
+  .clearfix {
+    *zoom:1;
+  }
 
 .style_red{
     color: #f10215!important;
@@ -153,6 +169,11 @@ input, button{
 .header{
     height: 140px;
     /* background-color: #aed2db; */
+}
+
+.inner{
+    position: relative;
+    height: 140px;
 }
 
 .header .logo{
@@ -288,4 +309,207 @@ input, button{
     background-color: gold;
     width: 190px;
     height: 40px;
+}
+
+.navitems{
+    position: absolute;
+    left: 200px;
+    bottom: 0px;
+}
+
+.navitems ul{
+    float: left;
+}
+
+.navitems ul li{
+    float: left;
+    margin-left: 30px;
+}
+
+.navitems ul li a{
+    font-size: 16px;
+    font-weight: 700;
+    height: 40px;
+    line-height: 40px;
+    color: #555A5F;
+}
+
+.navitems .spacer{
+    float: left;
+    margin-left: 20px;
+    margin-top: 15px;
+    margin-right: -10px;
+}
+
+/* footer 部分 start */
+.footer{
+    height: 560px;
+    background-color: #EAEAEA;
+}
+
+.footer_service{
+    border-bottom: 1px solid #DEDEDE;
+    /* height: 40px; */
+}
+
+.footer_service_inner{
+    /* background-color: purple; */
+    padding: 30px 0;
+}
+
+.footer_service_inner li{
+    float: left;
+    width: 297px;
+    height: 42px;
+}
+
+.service_unit{
+    width: 225px;
+    height: 42px;
+    /* background-color: #9D9D9D; */
+    margin: 0 auto;  /* 居中对齐 */
+    position: relative;
+}
+
+.service_unit h5{
+    width: 36px;
+    height: 42px;
+    text-indent: -999px;
+    overflow: hidden; /*使用overflow：hidden 来切除外出的text*/
+    background: url(./../images/ico_service.png) no-repeat;
+    position: absolute;
+    top: 0;
+    left: 0;
+
+}
+
+.service_unit p{
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 42px;
+    margin-left: 45px;
+}
+
+.service_unit .kuai{
+    background-position: 0 -42px;
+}
+
+.service_unit .hao{
+    background-position: 0 -84px;
+}
+
+.service_unit .sheng{
+    background-position: 0 -126px;
+}
+
+.help{
+    height: 179px;
+    border-bottom: 1px solid #DEDEDE;
+    padding-top: 20px;
+}
+
+.help dl{
+    width: 195px;
+    float: left;
+}
+
+.help dt{
+    font-size: 14px;
+    font-weight: 700;
+    color: #666;
+    height: 30px;
+}
+
+.help dd{
+    height: 22px;
+}
+
+.help a{
+    font-size: 12px;
+    color: #727272;
+}
+
+.help a:hover{
+    font-size: 12px;
+    color: #f10215;
+}
+
+.help .map{
+    float: right;
+    width: 207px;
+    height: 150px;
+    background: url(./../images/ico_footer.png) no-repeat;
+}
+
+.map dt{
+    text-align: center;
+}
+
+.map .info{
+    width: 175px;
+    height: 50px;
+    font-size: 12px;
+    color: #727272;
+    margin-top: 5px;
+    margin-left: 10px;
+    line-height: 18px;
+}
+
+.map .more{
+    text-align: right;
+    padding-right: 10px;
+}
+
+.copyright{
+    padding-top: 15px;
+}
+
+.copyright .links a{
+    font-size: 12px;
+    color: #727272;
+}
+
+.copyright .links div{
+    display: inline-block;
+}
+
+.c-info{
+    font-size: 12px;
+    color: #9E9E9E;
+    text-align: center;
+    line-height: 20px;
+    margin-top: 10px;
+}
+
+.law-info{
+    text-align: center;
+    margin-top: 10px;
+}
+
+.law-info a{
+    display: inline-block;
+    width: 103px;
+    height: 32px;
+    background: url(./../images/ico_footer.png) no-repeat;
+    background-position: 0 -151px;
+}
+
+.law-info .kexin{
+    background-position: -105px -151px;
+}
+
+.law-info .wangjing{
+    background-position: 0 -183px;
+}
+
+.law-info .chengxin{
+    background-position: -105px -183px;
+}
+
+.law-info .jubao{
+    background-position: -0px -216px;
+}
+
+.law-info .xiazai{
+    background-position: -105px -216px;
 }

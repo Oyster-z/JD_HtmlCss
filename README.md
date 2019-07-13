@@ -125,5 +125,73 @@
         
         确认a 标签的hover导致变色还是li标签的hover 如果只加在a标签上，那么要给a标签给一个display block 属性
 
-        竖线的 margin 15px 20px -10px 0
+        竖线的 margin 15px 20px -10px 0， 右边采用负值来修正空间
+    ```
+
+13. 页面底部 footer
+    - 做项目的时候，头部和底部作为模板处理。
+    - 分上中下 三个部分
+        - footer-service 里面放一个版心， 版心中做内容处理
+        - footer-service-inner 里面放4个li 标签 浮动标签之后父亲盒子就不能被里面的标签撑开，有高度了？？
+        > 浮动导致的问题，如何清除浮动。原理：浮动不占用空间
+        - li标签中嵌套一个 div标签 service_unit， 所有的盒子都是顶对齐
+    - help部分
+        - 里面用dl>dt>dd 来实现 dt 标题 dd 内链接
+        - 最后一个dl单独处理 cover>dt>(dd|dd>a)
+    ```
+        footer 高度是 560px color #EAEAEA
+
+        footer-service height 100px  border-bottom: 1px solid #DEDEDE
+
+        footer-service-inner 每个li标签大小为 297px 42px 
+
+        service-unit 225px 42px 精灵图 36px 42px p 18px weight 700
+
+        help 高度 180px padding 20px
+        
+        dl 标签 宽度 198px--->cover正常 可以调到195px
+
+        dt 标题 14px weight 700 #666 height 30px 
+
+        dd 标签 height 22px   dd a 标签 #727272 font-size 12px
+
+        cover width height：207px 150px float：right info width height 175px 50px font-size 12px line-height:18px
+    ```
+#### 20190708
+14. 底部
+    - 分为三个部分，作为footer 的最下部分，版本部分
+    - copyright 模块
+    - 友情链接 links a标签 和 span标签，用| 表示间隔
+    - copyright-info 使用c-info 内容采用p标签
+    - tupian 里面使用a 标签 ，a 标签采用 inline-block 精灵图的方式完成 
+    ```
+        copyright height: 用元素撑开 border-top: 1px solid #ccc padding-top: 15px
+
+        links a：#727272 span #d4cdcd font-size: 12px margin: 0 8px
+
+        c-info #9E9E9B line-height: 20 margoin-top: 10px text-align:center
+
+
+    ```
+15. 内容 这用在index.css 里面
+    
+    - 京东盒子 JD 通栏的盒子，大盒子 jd
+    - jd_inner 要压住ad，保证在版心内的空间属于 jd_inner 的部分
+    - ad 
+    - 使用postion：absolute的时候，会将数据转换成行内块，这样行内块如果没有内容的话，是无法显示的。
+    > 只有浮动的盒子、固定定位的盒子、决定定位的盒子才有行内块转换。
+    ```
+        jd_inner 高度 480px
+    ```
+16. 版心部分的内容 
+    - 划分为左、中、右三个部分
+    - 左边 jd_clo1 ul>li>a
+    - 中间 jd_clo2 轮播图 上下划分 jd_clo2_hd jd_clo2_bd 轮播图包含两个箭头（） 背景图 序列原点（）
+        图片底部侧缝隙，使用 vertical-align: top
+    - 右边 jd_clo3
+    ```
+        jd_clo1 190px(width) * 480(height) background-color:#6E6568 hover: #999395
+        jd_clo2 790px(width) * 480(height) margin-left: 10px 下 390*130px    上 790px * 340px
+        
+        jd_clo3 190px(width) * 480(height)
     ```
